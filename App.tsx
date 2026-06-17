@@ -3,10 +3,10 @@ import { StyleSheet, Text, View, TextInput, Pressable } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <View  style={styles.container}>
       <Text style={styles.title}>Sign In</Text>
 
-      <TextInput placeholder="Email" style={styles.input}/>
+      <TextInput placeholder="Email" style={styles.input} autoFocus autoCapitalize="none" keyboardType="email-address" autoComplete="email"/>
       <TextInput placeholder="Password" style={styles.input} secureTextEntry={true}/>
 
       <Pressable onPress={() => console.log("Pressable")} style={styles.button}>
